@@ -1,6 +1,7 @@
 # Tyre Segmentation and Counting
 
 This project detects, segments, and counts tyres in images using a YOLOv8 segmentation model with a simple Streamlit interface.
+dataset used: https://app.roboflow.com/parth-0fjvs/tyre-segmentation-and-counting
 
 ## Features
 - Tyre instance segmentation using YOLOv8
@@ -20,3 +21,4 @@ This project detects, segments, and counts tyres in images using a YOLOv8 segmen
 
 **Output Image**
 ![Output](images/output.png)
+
