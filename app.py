@@ -46,7 +46,7 @@ if uploaded_file:
     )[0]
 
     tyre_count = count_tyres(results)
-    output_img = results.plot()
+    output_img = results.plot()[..., ::-1]
 
     #display results
     st.subheader(f"Tyres Detected: {tyre_count}")
