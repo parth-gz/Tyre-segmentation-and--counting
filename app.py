@@ -13,15 +13,13 @@ def load_model():
 model = load_model()
 
 #function to count tyres based on mask area
-def count_tyres(results, min_area=2500):
+def count_tyres(results, min_area=200):
     if results.masks is None:
         return 0
+
     masks = results.masks.data.cpu().numpy()
-    count = 0
-    for m in masks:
-        if m.sum() >= min_area:
-            count += 1
-    return count
+    return sum(m.sum() >= min_area for m in masks)
+
 
 st.title("Tyre Segmentation & Counting")
 
