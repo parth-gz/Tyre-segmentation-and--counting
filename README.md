@@ -13,3 +13,10 @@ This project detects, segments, and counts tyres in images using a YOLOv8 segmen
 3. run ``` pip install -r requirements.txt ```
 4. run ``` streamlit run app.py ```
 
+## Example
+
+**Input Image**
+![Input](images/input.png)
+
+**Output Image**
+![Output](images/output.png)
